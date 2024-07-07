@@ -7,9 +7,70 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
+    <!---Bootsrap file-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </head>
 
-<body>
+<body onload="init()">
+
+    <div class="container">
+
+        <div class="card quizz-card">
+            <img id="question-picture" src="img/questions-3409194_1280.png" alt="">
+
+
+            <div class="card-body" id="endScreen" style="display: none;">
+
+            </div>
+
+
+            <div class="card-body" id="questionBody">
+                <h5 class="card-title" id="questiontext">Wie viel Prozent der Erdoberfläche sind mit Wasser bedeckt?
+                </h5>
+
+                <div class="card quiz-answer mb-3" onclick="answer('answer_1')">
+                    <div class="card-body" id="answer_1">
+                        Antwort
+                    </div>
+                </div>
+
+                <div class="card quiz-answer mb-3" onclick="answer('answer_2')">
+                    <div class="card-body" id="answer_2">
+                        Antwort
+                    </div>
+                </div>
+
+                <div class="card quiz-answer mb-3" onclick="answer('answer_3')">
+                    <div class="card-body" id="answer_3">
+                        Antwort
+                    </div>
+                </div>
+
+                <div class="question-footer" id="questionFooter">
+                    <button>
+                        < </button>
+                            <button onclick="nextQuestion()" class="btn-one" id="nextbutton-right" disabled> >
+                            </button>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
 
 
 

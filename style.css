@@ -1,0 +1,32 @@
+body {
+
+    background-color: #f4edff !important;
+    /*imporant damit die seite weisst ob es unsere nimmt oder das von bootsrap*/
+}
+
+.container {
+    min-height: 100vh;
+    background-color: #f4edff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quizz-card {
+    width: 30rem;
+}
+
+.quiz-answer:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.question-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-success,
+.bg-danger {
+    color: white;
+}
